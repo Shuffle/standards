@@ -1,0 +1,24 @@
+{
+	"secret": {
+		"created_at": "",
+		"created_by": {
+			"email": "",
+			"name": "",
+			"type": ""
+		},
+		"latest_version": "",
+		"name": "",
+		"sync_status": {},
+		"version": {
+			"created_at": "",
+			"created_by": {
+				"email": "",
+				"name": "",
+				"type": ""
+			},
+			"type": "",
+			"value": "",
+			"version": ""
+		}
+	}
+}
