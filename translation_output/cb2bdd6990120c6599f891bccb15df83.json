@@ -1,4 +1,0 @@
-{
-  "kms_key": "secret.name",
-  "kms_value": "secret.version.value"
-}
