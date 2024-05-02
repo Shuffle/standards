@@ -1,0 +1,10 @@
+title: Detect generic login Windows event
+id: detect_generic_windows_login
+
+detection:
+  selection:
+    EventID: "4634"
+
+  condition: selection
+  
+level: high
