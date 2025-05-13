@@ -10,7 +10,7 @@
     "product": "Optional: Details about the product that reported the finding.",
     "product_uid": "Optional: The unique identifier of the product that reported the finding.",
     "related_events": "Optional: IDs of related events",
-    "remediation": "Optional: Description by a user about how remediation happened"
+    "remediation": "Optional: Description by a user about how remediation happened",
     "src_url": "Optional: The URL pointing to the source of the finding.",
     "supporting_data": "Optional: Any supporting information about the finding.", 
     "types": "Optional: One or more types of the reported finding."
