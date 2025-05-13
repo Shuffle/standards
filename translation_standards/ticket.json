@@ -1,11 +1,17 @@
 {
-    "title": "The title of the ticket.",
-    "src_url": "The url of a ticket in the ticket system.",
-    "status": "The normalized identifier for the ticket status. Should be one of: New, In Progress, Notified, On Hold, Resolved, Closed, Canceled, Reopened",
-    "type": "The linked ticket type determines whether the ticket is internal or in an external ticketing system. One of: Unknown, Internal, External, Other",
-    "uid": "Unique identifier of the ticket.",
+    "title": "Required: A title or a brief phrase summarizing the reported finding.",
+    "uid": "Required: The unique identifier of the reported finding.",
 
-    "description": "The description of the ticket.",
-    "source": "The name of the source of the ticket",
-    "created_at": "The timestamp of the ticket"
+    "created_time": "Optional: The time when the finding was created.",
+    "desc": "Optional: The description of the reported finding.",
+    "first_seen_time": "Optional: The time when the finding was first observed.",
+    "last_seen_time": "Optional: The time when the finding was most recently observed.",
+    "modified_time": "Optional: The time when the finding was last modified.",
+    "product": "Optional: Details about the product that reported the finding.",
+    "product_uid": "Optional: The unique identifier of the product that reported the finding.",
+    "related_events": "Optional: IDs of related events",
+    "remediation": "Optional: Description by a user about how remediation happened"
+    "src_url": "Optional: The URL pointing to the source of the finding.",
+    "supporting_data": "Optional: Any supporting information about the finding.", 
+    "types": "Optional: One or more types of the reported finding."
 }
