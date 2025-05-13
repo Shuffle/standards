@@ -1,0 +1,11 @@
+{
+    "title": "The title of the ticket.",
+    "src_url": "The url of a ticket in the ticket system.",
+    "status": "The normalized identifier for the ticket status. Should be one of: New, In Progress, Notified, On Hold, Resolved, Closed, Canceled, Reopened",
+    "type": "The linked ticket type determines whether the ticket is internal or in an external ticketing system. One of: Unknown, Internal, External, Other",
+    "uid": "Unique identifier of the ticket.",
+
+    "description": "The description of the ticket.",
+    "source": "The name of the source of the ticket",
+    "created_at": "The timestamp of the ticket"
+}
