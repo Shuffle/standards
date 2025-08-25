@@ -1,17 +1,17 @@
 {
-    "title": "Required: A title or a brief phrase summarizing the reported finding.",
-    "uid": "Required: The unique identifier of the reported finding.",
+    "title": "String: Required: Title or a brief phrase summarizing the reported finding.",
+    "uid": "String: Required unique identifier of the reported finding.",
 
-    "created_time": "Optional: The time when the finding was created.",
-    "desc": "Optional: The description of the reported finding.",
-    "first_seen_time": "Optional: The time when the finding was first observed.",
-    "last_seen_time": "Optional: The time when the finding was most recently observed.",
-    "modified_time": "Optional: The time when the finding was last modified.",
-    "product": "Optional: Details about the product that reported the finding.",
-    "product_uid": "Optional: The unique identifier of the product that reported the finding.",
-    "related_events": "Optional: IDs of related events",
-    "remediation": "Optional: Description by a user about how remediation happened",
-    "src_url": "Optional: The URL pointing to the source of the finding.",
-    "supporting_data": "Optional: Any supporting information about the finding.", 
-    "types": "Optional: One or more types of the reported finding."
+    "desc": "String: Optional: The description of the reported finding.",
+    "created_time": "Timestamp String: Optional: The time when the finding was created.",
+    "first_seen_time": "Timestamp String: Optional: The time when the finding was first observed.",
+    "last_seen_time": "Timestamp String: Optional: The time when the finding was most recently observed.",
+    "modified_time": "Timestamp String: Optional: The time when the finding was last modified.",
+    "product": "String: Optional: Details about the product that reported the finding.",
+    "product_uid": "String: Optional: The unique identifier of the product that reported the finding.",
+    "related_events": "String: Optional: IDs of related events",
+    "remediation": "String: Optional: Description by a user about how remediation happened",
+    "src_url": "String: Optional: The URL pointing to the source of the finding.",
+    "supporting_data": "String: Optional: Any supporting information about the finding.", 
+    "types": "String: Optional: One or more types of the reported finding."
 }
