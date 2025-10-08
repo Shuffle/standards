@@ -13,5 +13,7 @@
     "remediation": "String: Optional: Description by a user about how remediation happened",
     "src_url": "String: Optional: The URL pointing to the source of the finding.",
     "supporting_data": "String: Optional: Any supporting information about the finding.", 
-    "types": "String: Optional: One or more types of the reported finding."
+    "types": "String: Optional: One or more types of the reported finding.",
+   
+    "rule": "String: Optional: The name of the rule that created the ticket"
 }
