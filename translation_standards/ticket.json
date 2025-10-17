@@ -1,4 +1,4 @@
-{
+{    
     "title": "String: Required: Title or a brief phrase summarizing the reported finding.",
     "uid": "String: Required unique identifier of the reported finding.",
 
@@ -15,5 +15,11 @@
     "supporting_data": "String: Optional: Any supporting information about the finding.", 
     "types": "String: Optional: One or more types of the reported finding.",
    
-    "rule": "String: Optional: The name of the rule that created the ticket"
+    "metadata": {
+        "uid": "String: Optional: The original UID from the source system if it exists",
+        "activity_id": "String: Optional: The name of the rule or activity that created the ticket",
+        "extensions": {
+            "comments": "Array: Optional: An array of comments including the fields 'author', 'timestamp', 'text'"
+        }   
+    }
 }
