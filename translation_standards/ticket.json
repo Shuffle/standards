@@ -19,7 +19,9 @@
         "uid": "String: Optional: The original UID from the source system if it exists",
         "activity_id": "String: Optional: The name of the rule or activity that created the ticket",
         "extensions": {
-            "comments": "Array: Optional: An array of JSON formatted comments including the fields 'author', 'timestamp', 'text'"
+            "custom_attributes": {
+                "comments": "Array: Optional: An array of JSON formatted comments including the fields 'author', 'timestamp', 'text'"
+            }
         }   
     }
 }
