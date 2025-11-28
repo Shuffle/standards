@@ -5,7 +5,7 @@
   "name": "String: Optional: The alternate device name, ordinarily as assigned by an administrator.",
   "owner": "user.json",
   "type": "String: Optional: The device type. For example: unknown, server, desktop, laptop, tablet, mobile, virtual, browser, or other",
-  "type_id": "Integer: Required: The device type ID. 0: Unknown, 1: Server, 2: Desktop, 3: Laptop, 4: Tablet, 5: Mobile, 6: Virtual, 7: IOT, 8: Browser, 9:	Firewall, 10: Switch, 11: Hub, 12: Router, 13: IDS, 14: IPS, 15: Load Balancer, 99: Other",
+  "type_id": "Integer: Required: The device type ID. 0: Unknown, 1: Server, 2: Desktop, 3: Laptop, 4: Tablet, 5: Mobile, 6: Virtual, 7: IOT, 8: Browser, 9: Firewall, 10: Switch, 11: Hub, 12: Router, 13: IDS, 14: IPS, 15: Load Balancer, 99: Other",
   "uid": "String: Recommended: The unique identifier of the device. For example the Windows TargetSID or AWS EC2 ARN.",
   
   "risk_level": "String: Optional: The risk level, normalized to the caption of the risk_level_id value.",
