@@ -1,0 +1,12 @@
+{
+  "activity_id": "Integer: Required: The normalized identifier of the activity that triggered the event. 0: Unknown, 1: Log, 2: Collect, 99: Other",
+  "activity_name": "String: Optional: The event activity name, as defined by the activity_id.",
+  "actor": {
+    "user": "String: Recommended: The user that initiated the activity or the user context from which the activity was initiated."
+  }
+  "category_name": "String: Optional: The event category name, as defined by category_uid value: Discovery.",
+  "category_uid": "Integer: Required: The category unique identifier of the event. 5: Discovery",
+  "class_name": "String: Optional: The event class name, as defined by class_uid value: Device Inventory Info.",
+  "class_uid": "Integer: Required: The unique identifier of a class. A class describes the attributes available in an event. 5001: Device Inventory Info",
+  "count": "Integer: Optional: The number of times that events in the same logical group occurred during the event Start Time to End Time period."
+}
