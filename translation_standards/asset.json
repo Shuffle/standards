@@ -1,12 +1,36 @@
 {
-  "activity_id": "Integer: Required: The normalized identifier of the activity that triggered the event. 0: Unknown, 1: Log, 2: Collect, 99: Other",
-  "activity_name": "String: Optional: The event activity name, as defined by the activity_id.",
-  "actor": {
-    "user": "String: Recommended: The user that initiated the activity or the user context from which the activity was initiated."
-  }
-  "category_name": "String: Optional: The event category name, as defined by category_uid value: Discovery.",
-  "category_uid": "Integer: Required: The category unique identifier of the event. 5: Discovery",
-  "class_name": "String: Optional: The event class name, as defined by class_uid value: Device Inventory Info.",
-  "class_uid": "Integer: Required: The unique identifier of a class. A class describes the attributes available in an event. 5001: Device Inventory Info",
-  "count": "Integer: Optional: The number of times that events in the same logical group occurred during the event Start Time to End Time period."
+  "hostname": "String: Required: The device hostname",
+  "ip": "String: Recommended: The device IP address, in either IPv4 or IPv6 format.",
+  "mac": "String: Optional: The Media Access Control (MAC) address of the endpoint.",
+  "name": "String: Optional: The alternate device name, ordinarily as assigned by an administrator.",
+  "owner": "user.json",
+  "type": "String: Optional: The device type. For example: unknown, server, desktop, laptop, tablet, mobile, virtual, browser, or other",
+  "type_id": "Integer: Required: The device type ID. 0: Unknown, 1: Server, 2: Desktop, 3: Laptop, 4: Tablet, 5: Mobile, 6: Virtual, 7: IOT, 8: Browser, 9:	Firewall, 10: Switch, 11: Hub, 12: Router, 13: IDS, 14: IPS, 15: Load Balancer, 99: Other",
+  "uid": "String: Recommended: The unique identifier of the device. For example the Windows TargetSID or AWS EC2 ARN.",
+  
+  "risk_level": "String: Optional: The risk level, normalized to the caption of the risk_level_id value.",
+  "risk_level_id": "Integer: Recommended: The normalized risk level id. 0: Info, 1: Low, 2: Medium, 3: High, 4: Critical, 99: Other",
+  "risk_score": "String: Recommended: The risk score as reported by the event source.",
+  
+  "agent_list": "Array: Optional: A list of agent objects associated with a device, endpoint, or resource.",
+  "autoscale_uid": "String: Optional: The unique identifier of the cloud autoscale configuration.",
+  "boot_time": "String: Optional: Timestamp of The time the system was booted.",
+  "created_time": "String: Optional: Timestamp of The time when the device was known to have been created.",
+  "desc": "String: Optional: The description of the device, ordinarily as reported by the operating system.",
+  "domain": "String: Optional: The network domain where the device resides. For example: work.example.com.",
+  "eid": "String: Optional: An Embedded Identity Document, is a unique serial number that identifies an eSIM-enabled device.",
+  "first_seen_time": "String: Optional: The initial discovery time of the device.",
+  "hypervisor": "String: Optional: The name of the hypervisor running on the device. For example, Xen, VMware, Hyper-V, VirtualBox, etc.",
+  "iccid": "String: Optional: The Integrated Circuit Card Identification of a mobile device. Typically it is a unique 18 to 22 digit number that identifies a SIM card.",
+  "imei": "String: Optional: The International Mobile Equipment Identity that is associated with the device.",
+  "instance_uid": "String: Recommended: The unique identifier of a VM instance.",
+  "interface_name": "String: Recommended: The name of the network interface (e.g. eth2).",
+  "interface_uid": "String: Recommended: The unique identifier of the network interface.",
+  "last_seen_time": "String: Recommended: The most recent discovery time of the device.",
+  "model": "String: Optional: The model of the device. For example ThinkPad X1 Carbon.",
+  "modified_time": "String: Optional: Timestamp of The time when the device was last known to have been modified.",
+  "os_machine_uuid": "String: Optional: UUID of The operating system assigned Machine ID.",
+  "region": "String: Optional: The region where the virtual machine is located. For example, an AWS Region.",
+  "subnet": "String: Optional: The subnet mask"
+  
 }
