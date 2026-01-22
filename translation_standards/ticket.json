@@ -2,48 +2,59 @@
   "class_uid": "Integer: Required: Must be 2005 for Incident Finding.",
   "class_name": "String: Required: Must be \"Incident Finding\".",
 
-  "finding_uid": "String: Required: Unique identifier of the finding.",
-  "title": "String: Required: Title or brief phrase summarizing the incident finding.",
-  "desc": "String: Optional: Description of the incident finding.",
+  "finding_uid": "String: Required: Unique identifier of the incident finding.",
+  "title": "String: Required: Short human-readable title describing the finding.",
+  "desc": "String: Optional: Detailed description of the incident finding.",
 
   "severity_id": "Integer: Optional: Numeric severity level as defined by OCSF.",
-  "severity": "String: Optional: Human readable severity name.",
+  "severity": "String: Optional: Human-readable severity label.",
 
-  "status_id": "Integer: Optional: Numeric status of the finding (e.g., New, In Progress, Closed).",
-  "status": "String: Optional: Human readable status.",
+  "status_id": "Integer: Optional: Numeric status code of the finding (e.g., New, In Progress, Closed).",
+  "status": "String: Optional: Human-readable status name.",
 
-  "confidence": "Integer: Optional: Confidence score (0–100) that the finding is valid.",
+  "confidence": "Integer: Optional: Confidence score (0–100) indicating likelihood the finding is valid.",
 
   "created_time": "Timestamp String: Optional: Time when the finding record was created.",
-  "first_seen_time": "Timestamp String: Optional: Time when the incident activity was first observed.",
-  "last_seen_time": "Timestamp String: Optional: Time when the incident activity was last observed.",
-  "modified_time": "Timestamp String: Optional: Time when the finding was last modified.",
+  "first_seen_time": "Timestamp String: Optional: Time when the incident was first observed.",
+  "last_seen_time": "Timestamp String: Optional: Time when the incident was most recently observed.",
+  "modified_time": "Timestamp String: Optional: Time when the finding record was last modified.",
 
-  "types": "Array of String: Optional: One or more OCSF incident or finding type classifications.",
+  "types": "Array of String: Optional: One or more classifications describing the nature or source of the finding.",
 
   "product": {
-    "name": "String: Optional: Name of the product that generated the finding.",
+    "name": "String: Optional: Name of the product or system that generated the finding.",
     "uid": "String: Optional: Unique identifier of the product."
   },
 
-  "related_events": "Array of String: Optional: UIDs of related events.",
+  "related_events": "Array of String: Optional: UIDs of events related to this incident.",
+
+  "references": "Array of String: Optional: URLs or external references for the finding.",
+
+  "supporting_data": "String: Optional: Free-form supporting information or evidence.",
 
   "remediation": {
     "desc": "String: Optional: Description of how the incident was or should be remediated."
   },
 
-  "references": "Array of String: Optional: URLs pointing to the source or supporting material for the finding.",
-
-  "supporting_data": "String: Optional: Any additional context or evidence about the finding.",
-
   "metadata": {
-    "uid": "String: Optional: Original finding UID from the source system.",
-    "activity_id": "String: Optional: Rule, control, or activity that produced the finding.",
+    "uid": "String: Optional: Original finding UID in the source system.",
+    "activity_id": "String: Optional: Identifier of the rule, playbook, or activity that generated the finding.",
 
     "extensions": {
       "custom_attributes": {
-        "comments": "Array: Optional: An array of JSON objects with fields 'author', 'timestamp', 'text'.",
-        "tlp": "Integer: Optional: Traffic Light Protocol classification. Default: 2."
+        "comments": "Array: Optional: Array of objects with fields 'author', 'timestamp', 'text' representing analyst comments.",
+
+        "tlp": "Integer: Optional: Traffic Light Protocol classification. Default: 2.",
+
+        "tasks": "Array: Optional: Workflow or response tasks associated with the finding.",
+
+        "observables": "Array: Optional: Objects describing observed artifacts (e.g., IPs, hashes, domains) with fields like 'type' and 'value'.",
+
+        "customFields": "Object: Optional: Arbitrary key-value pairs for vendor-specific or workflow-specific fields.",
+
+        "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding.",
+
+        "attachments": "Array: Optional: Files or artifacts attached to the finding, such as reports, screenshots, or logs."
       }
     }
   }
