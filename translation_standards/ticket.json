@@ -1,6 +1,6 @@
 {
-  "class_uid": "Integer: Required: Must be 2005 for Incident Finding.",
-  "class_name": "String: Required: Must be \"Incident Finding\".",
+  "class_uid": "Integer: Required: Must be '2005'",
+  "class_name": "String: Required: Must be 'Incident Finding'",
 
   "finding_uid": "String: Required: Unique identifier of the incident finding.",
   "title": "String: Required: Short human-readable title describing the finding.",
