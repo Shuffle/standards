@@ -38,6 +38,8 @@
 
   "observables": [],
   "enrichments": [],
+  "tasks": "Array: Optional: Workflow or response tasks associated with the finding.",
+
   "metadata": {
     "uid": "String: Optional: Original finding UID in the source system.",
     "activity_id": "String: Optional: Identifier of the rule, playbook, or activity that generated the finding.",
@@ -47,8 +49,6 @@
         "comments": "Array: Optional: Array of objects with fields 'author', 'timestamp', 'text' representing analyst comments.",
 
         "tlp": "Integer: Optional: Traffic Light Protocol classification. Default: 2.",
-
-        "tasks": "Array: Optional: Workflow or response tasks associated with the finding.",
 
         "observables": "Array: Optional: Objects describing observed artifacts (e.g., IPs, hashes, domains) with fields like 'type' and 'value'.",
 
