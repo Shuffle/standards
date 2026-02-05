@@ -38,6 +38,7 @@
 
   "observables": [],
   "enrichments": [],
+  "activity": [],
   "tasks": "Array: Optional: Workflow or response tasks associated with the finding.",
 
   "metadata": {
