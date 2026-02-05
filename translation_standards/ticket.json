@@ -53,7 +53,7 @@
 
         "observables": "Array: Optional: Objects describing observed artifacts (e.g., IPs, hashes, domains) with fields like 'type' and 'value'.",
 
-        "customFields": "Object: Optional: Arbitrary key-value pairs for vendor-specific or workflow-specific fields.",
+        "custom_fields": "Object: Optional: Arbitrary key-value pairs for vendor-specific or workflow-specific fields.",
 
         "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding.",
 
