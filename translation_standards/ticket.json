@@ -42,7 +42,7 @@
   "tasks": "Array: Optional: Workflow or response tasks associated with the finding.",
 
   "metadata": {
-    "uid": "String: Optional: Original finding UID in the source system.",
+    "uid": "String: Optional: Original finding UID in the source system. Do not choose e.g. rule IDs. If no relevant incident or alert ID exists, keep blank.",
     "activity_id": "String: Optional: Identifier of the rule, playbook, or activity that generated the finding.",
 
     "extensions": {
