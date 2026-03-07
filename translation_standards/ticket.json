@@ -3,7 +3,7 @@
   "class_name": "Incident Finding",
 
   "finding_uid": "String: Required: Unique identifier of the incident finding.",
-  "title": "String: Required: Short human-readable title describing the finding.",
+  "title": "String: Required: Short human-readable title describing the finding. Relevant short description or subject works as well.",
   "desc": "String: Optional: Detailed description of the incident finding.",
 
   "severity_id": "Integer: Optional: Numeric severity level as defined by OCSF.",
