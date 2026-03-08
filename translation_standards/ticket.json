@@ -4,7 +4,7 @@
 
   "finding_uid": "String: Required: Unique identifier of the incident finding.",
   "title": "String: Required: Short human-readable title describing the finding. Relevant short description or subject works as well.",
-  "desc": "String: Optional: Detailed description of the incident finding.",
+  "desc": "String: Optional: Detailed description of the incident finding. Can be in any format, including e.g. base64 or other encoding if the data is not directly available.",
 
   "severity_id": "Integer: Optional: Numeric severity level as defined by OCSF.",
   "severity": "String: Optional: Human-readable severity label.",
