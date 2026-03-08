@@ -51,13 +51,9 @@
 
         "tlp": "Integer: Optional: Traffic Light Protocol classification. Default: 2.",
 
-        "observables": "Array: Optional: Objects describing observed artifacts (e.g., IPs, hashes, domains) with fields like 'type' and 'value'.",
-
         "custom_fields": "Object: Optional: Arbitrary key-value pairs for vendor-specific or workflow-specific fields.",
 
-        "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding.",
-
-        "attachments": "Array: Optional: Files or artifacts attached to the finding, such as reports, screenshots, or logs."
+        "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding."
       }
     }
   }
