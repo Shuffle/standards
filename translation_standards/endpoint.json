@@ -1,0 +1,32 @@
+{
+  "hostname": "String: Required: Primary hostname of the endpoint.",
+  "owner": "user.json"
+  "security_update": "String: Recommended: Identifier of the latest OS security update or patch level applied to this endpoint (e.g., OS build number or last installed KB/patch ID)",
+  "uid": "String: Recommended: The unique identifier of the device. For example the Windows TargetSID or AWS EC2 ARN.",
+  "name": "String: Optional: The alternate device name, ordinarily as assigned by an administrator.",
+  "source": "String: Required: Name of the platform or system this endpoint data came from (e.g., EDR, MDM, CMDB, Cloud provider).",   
+  "security_update_history_time": "Timestamp: Optional: Timestamp of the most recent security update in ISO 8601 format",  
+  "disk_encryption": "Boolean: Recommended: Indicates whether full disk encryption is enabled e.g. FileVault on macOS, BitLocker on Windows. LUKS on Linux and so on",
+  "patch_update": "String: Recommended: Current OS patch compliance status for this endpoint (e.g., Up to date, Outdated, Critical missing, Unknown).", 
+  "ip": "String: Recommended: Primary IP address of the endpoint.",
+  "status_detail": "String: Optional: Additional context describing the current status or reason for non-compliance.",
+  
+  "org": {
+    "org_name": "String: Optional: Name of the organization or tenant the endpoint belongs to.",
+    "uid": "String: Recommended: The unique identifier of the device. For example the Windows TargetSID or AWS EC2 ARN.",
+  }
+    
+  "os": "String: Optional: Operating system name (e.g., Windows, Linux, macOS).",
+  "agent_list": "Array: Optional: A list of agent objects associated with a device, endpoint, or resource."
+  "os_version": "String: Optional: Operating system version or build (e.g., 11.0.22631, 22.04).",
+  "type": "String: Optional: Endpoint platform or form factor (e.g., Workstation, Laptop, Server, Mobile, VM).",
+  "device_managed": "Boolean: Optional: Indicates whether the endpoint is managed by corporate tooling (true = managed, false = unmanaged).",
+  "status": "String: Optional: Current operational status of the endpoint (e.g., Online, Offline, Retired).",
+  "status_id": "Integer: Optional: Normalized numeric status code for the endpoint.",
+  "os_machine_uuid": "String: Optional: UUID of operating system assigned Machine ID.",
+  "interface_name": "String: Recommended: The name of the network interface(e.g. eth 1).",
+  "interface_uid": "String: Recommended: The unique identifier of the network interface."
+  "created_time": "String: Optional: Time when the endpoint record was created, in ISO 8601 format.",
+  "last_seen_time": "Timestamp String: Optional: Last time the endpoint checked in or reported telemetry, in ISO 8601 format."
+}
+
