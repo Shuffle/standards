@@ -11,7 +11,7 @@
   "severity": "String: Optional: Human-readable severity label.",
 
   "status_id": "Integer: Optional: Numeric status code of the finding (e.g., New, In Progress, Closed).",
-  "status": "String: Optional: Human-readable status name.",
+  "status": "String: Optional: Human-readable status name. Should be one of or a synonym of New, In Progres, Closed, Escalated etc. Do not add it unless it may be a good fit.",
 
   "confidence": "Integer: Optional: Confidence score (0–100) indicating likelihood the finding is valid.",
 
