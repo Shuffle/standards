@@ -2,7 +2,7 @@
   "class_uid": 2005,
   "class_name": "Incident Finding",
 
-  "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding."
+  "assignee": "String: Optional: Email or identifier of the analyst or system responsible for the finding.",
   "finding_uid": "String: Required: Unique identifier of the incident finding.",
   "title": "String: Required: Short human-readable title describing the finding. Relevant short description or subject works as well. Should NOT be the same as ID.",
   "source": "String: Required: IF known, add the name of the source based on how the data looks. This SHOULD be directly written and should NOT a variable",
